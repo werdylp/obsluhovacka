@@ -1,0 +1,48 @@
+﻿<Window x:Class="obsluhovacka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:obsluhovacka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="27*"/>
+            <RowDefinition Height="194*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="156*"/>
+        </Grid.RowDefinitions>
+        
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Background="Gray">
+            <Label Content="cíl: 1000kč" HorizontalAlignment="Right" Width="120" Foreground="Yellow" FontWeight="Bold"></Label>
+            <Label Name="kasa" Content="dosaženo: 0kč" HorizontalAlignment="Right" Width="120" Foreground="White" FontWeight="Bold"></Label>
+            <Label Content="otevřeno" Width="62" Foreground="White" FontWeight="Bold"/>
+            <Slider x:Name="oteviracka" Minimum="0" Maximum="100" Width="150" IsEnabled="False" RenderTransformOrigin="0.356,0.936" Height="16"></Slider>
+            <Label Content="zavřeno" Width="113" Foreground="White" FontWeight="Bold"/>
+        </StackPanel>
+        
+        
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="obr/pozadi.png"></ImageBrush>
+            </Grid.Background>
+        </Grid>
+
+
+        <Grid Grid.Row="2" Background="LightYellow">
+        </Grid>
+
+
+        <Grid Grid.Row="3" Background="DarkGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+    </Grid>
+</Window>
