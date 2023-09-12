@@ -15,6 +15,7 @@
         </Grid.RowDefinitions>
         
         
+        
         <StackPanel Orientation="Horizontal" Grid.Row="0" Background="Gray">
             <Label Content="cíl: 1000kč" HorizontalAlignment="Right" Width="120" Foreground="Yellow" FontWeight="Bold"></Label>
             <Label Name="kasa" Content="dosaženo: 0kč" HorizontalAlignment="Right" Width="120" Foreground="White" FontWeight="Bold"></Label>
@@ -24,17 +25,20 @@
         </StackPanel>
         
         
+        
         <Grid Grid.Row="1">
             <Grid.Background>
                 <ImageBrush ImageSource="obr/pozadi.png"></ImageBrush>
             </Grid.Background>
         </Grid>
 
+        
 
         <Grid Grid.Row="2" Background="LightYellow">
         </Grid>
 
 
+        
         <Grid Grid.Row="3" Background="DarkGray">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -42,6 +46,72 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+
+            
+            
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="10" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="16" Grid.Column="0" Grid.Row="0">
+                    <Label.Background>
+                        <ImageBrush ImageSource="obr/suroviny-kafe.png" Stretch="Uniform"></ImageBrush>
+                    </Label.Background>
+                </Label>
+
+                <Label Content="10" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="16" Grid.Column="1" Grid.Row="0">
+                    <Label.Background>
+                        <ImageBrush ImageSource="obr/suroviny-mleko.png" Stretch="Uniform"></ImageBrush>
+                    </Label.Background>
+                </Label>
+
+                <Label Content="10" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="16" Grid.Column="1" Grid.Row="1">
+                    <Label.Background>
+                        <ImageBrush ImageSource="obr/suroviny-led.png" Stretch="Uniform"></ImageBrush>
+                    </Label.Background>
+                </Label>
+
+                <Label Content="10" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="16" Grid.Column="0" Grid.Row="1">
+                    <Label.Background>
+                        <ImageBrush ImageSource="obr/suroviny-slehacka.png" Stretch="Uniform"></ImageBrush>
+                    </Label.Background>
+                </Label>
+            </Grid>
+
+
+
+            <Grid x:Name="pripravna" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.Background>
+                    <ImageBrush ImageSource="obr/pripravna.png"></ImageBrush>
+                </Grid.Background>
+            </Grid>
+
+
+
+            <Grid Grid.Column="2">
+                <Image Source="obr/kavovar.png" Margin="-6,36,-9,0"/>
+                <Image Source="obr/logo.png" Margin="70,32,62,84"/>
+                <Image Source="obr/napenovac.png" Margin="17,44,104,56"/>
+                <Image Source="obr/konvicka.png" Margin="37,105,83,10"/>
+                <Image Source="obr/hrnek.png" Margin="71,10,84,120"/>
+                <Image Source="obr/hrnek.png" Margin="26,3,118,120"/>
+                <Image Source="obr/hrnek.png" Margin="102,17,52,120"/>
+                <Image Source="obr/sklenice.png" Margin="106,5,5,120"/>
+            </Grid>
         </Grid>
 
     </Grid>
